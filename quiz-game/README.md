@@ -7,8 +7,7 @@ I got most questions from here:
 
 - [https://www.ef.com/wwen/blog/language/questions-virtual-pub-quiz/
 https://www.opinionstage.com/blog/trivia-questions/](https://www.ef.com/wwen/blog/language/questions-virtual-pub-quiz/)
-- [https://www.ef.com/wwen/blog/language/questions-virtual-pub-quiz/
-https://www.opinionstage.com/blog/trivia-questions/](https://www.opinionstage.com/blog/trivia-questions/)
+- [https://www.opinionstage.com/blog/trivia-questions/](https://www.opinionstage.com/blog/trivia-questions/)
 
 ## Preview
 
