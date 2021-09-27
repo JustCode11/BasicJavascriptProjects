@@ -108,6 +108,336 @@ const questions = [
                 isTrue: false
             }
         ]
+    },
+    {
+        id: 6,
+        question: "Which artist painted the ceiling of the Sistine Chapel in Rome?",
+        answers: [
+            {
+                question: "Michelangelo Buonarroti",
+                isTrue: true
+            },
+            {
+                question: "Leonardo da Vinci",
+                isTrue: false
+            },
+            {
+                question: "Raffaello Sanzio",
+                isTrue: false
+            },
+            {
+                question: "Donato di Niccolò",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 7,
+        question: "What year was the very first model of the iPhone released?",
+        answers: [
+            {
+                question: "2005",
+                isTrue: false
+            },
+            {
+                question: "1999",
+                isTrue: false
+            },
+            {
+                question: "2007",
+                isTrue: true
+            },
+            {
+                question: "2004",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 8,
+        question: "Who was the first woman to win a Nobel Prize?",
+        answers: [
+            {
+                question: "Bertha von Suttner",
+                isTrue: false
+            },
+            {
+                question: "Mother Teresa",
+                isTrue: false
+            },
+            {
+                question: "Marie Curie",
+                isTrue: true
+            },
+            {
+                question: "Elizabeth Blackwell",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 9,
+        question: "Which planet has the most gravity?",
+        answers: [
+            {
+                question: "Mars",
+                isTrue: false
+            },
+            {
+                question: "Earth",
+                isTrue: false
+            },
+            {
+                question: "Saturn",
+                isTrue: false
+            },
+            {
+                question: "Jupiter",
+                isTrue: true
+            }
+        ]
+    },
+    {
+        id: 10,
+        question: "Which country produces the most coffee in the world?",
+        answers: [
+            {
+                question: "Vietnam",
+                isTrue: false
+            },
+            {
+                question: "Colombia",
+                isTrue: false
+            },
+            {
+                question: "Italy",
+                isTrue: false
+            },
+            {
+                question: "Brazil",
+                isTrue: true
+            }
+        ]
+    },
+    {
+        id: 11,
+        question: "What was Superman's birth name?",
+        answers: [
+            {
+                question: "Kal-El",
+                isTrue: true
+            },
+            {
+                question: "Clark Kent",
+                isTrue: false
+            },
+            {
+                question: "Zod",
+                isTrue: false
+            },
+            {
+                question: "Bruce",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 12,
+        question: "What is the smallest country in the world?",
+        answers: [
+            {
+                question: "Vatican City",
+                isTrue: true
+            },
+            {
+                question: "Monaco",
+                isTrue: false
+            },
+            {
+                question: "Venice",
+                isTrue: false
+            },
+            {
+                question: "San Marino",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 13,
+        question: "Which name is rapper Sean Combs better known by?",
+        answers: [
+            {
+                question: "Eminem",
+                isTrue: false
+            },
+            {
+                question: "P.Diddy",
+                isTrue: true
+            },
+            {
+                question: "Lil Nas X",
+                isTrue: false
+            },
+            {
+                question: "Bow Wow",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 14,
+        question: "When was the company Nike founded?",
+        answers: [
+            {
+                question: "1954",
+                isTrue: false
+            },
+            {
+                question: "1895",
+                isTrue: false
+            },
+            {
+                question: "1971",
+                isTrue: true
+            },
+            {
+                question: "1981",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 15,
+        question: "The book \"Da Vinci Code\" was written by who?",
+        answers: [
+            {
+                question: "Stephen King",
+                isTrue: false
+            },
+            {
+                question: "George R. R. Martin",
+                isTrue: false
+            },
+            {
+                question: "Raymond Kipling",
+                isTrue: false
+            },
+            {
+                question: "Dan Brown",
+                isTrue: true
+            }
+        ]
+    },
+    {
+        id: 16,
+        question: "How many films did Sean Connery play James Bond in?",
+        answers: [
+            {
+                question: "7",
+                isTrue: true
+            },
+            {
+                question: "9",
+                isTrue: false
+            },
+            {
+                question: "5",
+                isTrue: false
+            },
+            {
+                question: "12",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 17,
+        question: "When did the death sentence end in France?",
+        answers: [
+            {
+                question: "1878",
+                isTrue: false
+            },
+            {
+                question: "1889",
+                isTrue: false
+            },
+            {
+                question: "1901",
+                isTrue: false
+            },
+            {
+                question: "1981",
+                isTrue: true
+            }
+        ]
+    },
+    {
+        id: 18,
+        question: "How many eyes does a bee have?",
+        answers: [
+            {
+                question: "2",
+                isTrue: false
+            },
+            {
+                question: "5",
+                isTrue: true
+            },
+            {
+                question: "22",
+                isTrue: false
+            },
+            {
+                question: "89",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 19,
+        question: "Who is the richest person in the world as of 2020?",
+        answers: [
+            {
+                question: "Jeff Bezos",
+                isTrue: true
+            },
+            {
+                question: "Mark Zuckerberg",
+                isTrue: false
+            },
+            {
+                question: "Bill Gates",
+                isTrue: false
+            },
+            {
+                question: "Donald Trump",
+                isTrue: false
+            }
+        ]
+    },
+    {
+        id: 20,
+        question: "When did contruction on the Empire State building started?",
+        answers: [
+            {
+                question: "1944",
+                isTrue: false
+            },
+            {
+                question: "1894",
+                isTrue: false
+            },
+            {
+                question: "1929",
+                isTrue: true
+            },
+            {
+                question: "1905",
+                isTrue: false
+            }
+        ]
     }
 ];
 let allAnswers = [];
