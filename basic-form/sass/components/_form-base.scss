@@ -1,0 +1,258 @@
+%button-base-layout {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.fullContainer {
+    width: 100%;
+    height: (100vh - 40vh);
+    display: grid;
+    place-items: center;
+}
+
+.formFullContainer {
+    width: 50%;
+
+    @include xl {
+        width: 70%;
+    }
+
+    @include lg {
+        width: 80%;
+    }
+
+    @include md {
+        width: 90%;
+    }
+
+    @include sm {
+        width: 100%;
+    }
+
+    @include xs {
+        width: 100%;
+    }
+}
+
+.formContentContainer {
+    display: flex;
+    height: 400px;
+}
+
+.formHeader {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $formColor;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.formHeaderContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    @include md {
+        width: 100%;
+    }
+}
+
+.formHeaderContainer button {
+    @extend %button-base-layout;
+    background-color: transparent;
+    padding: 15px 0;
+    width: 33.33%;
+
+    &:hover {
+        background-color: lighten($formColor, 10%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &.selected {
+        background-color: lighten($formColor, 10%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    @include md {
+        font-size: .9rem;
+    }
+}
+
+.formSideContainer {
+    width: 30%;
+    background-color: lighten($formColor, 20%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 15px;
+
+    p {
+        font-size: $font-size-sm;
+
+        &.selected {
+            font-weight: bold;
+        }
+    }
+
+    @include md {
+        display: none;
+    }
+}
+
+.formContainer {
+    width: 70%;
+    background-color: lighten($formColor, 10%);
+    position: relative;
+
+    @include md {
+        width: 100%;
+    }
+
+    .formSite {
+        position: absolute;
+        padding: 25px;
+        height: 100%;
+        width: 100%;
+
+        &.show {
+            visibility: visible;
+        }
+
+        &.hide {
+            visibility: hidden;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .formItem {
+                margin: 15px 0;
+            }
+
+            .dateContainer {
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: 10px;
+                }
+            }
+
+            input[type="text"], input[type="date"], input[type="number"], select {
+                border: none;
+                padding: 5px 10px;
+                border-bottom: 2px solid $secondary;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                outline: none;
+                width: auto;
+                width: 150px;
+
+                &:focus {
+                    border-bottom: 2px solid darken($secondary, 20%);
+                }
+            }
+
+            input[type="date"] {
+                width: 160px;
+            }
+
+            .genderContainer {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btnContainer {
+                display: flex;
+                width: 100%;
+                margin-top: auto;
+
+                .btn {
+                    @extend %button-base-layout;
+                    background-color: $buttonColor;
+                    color: white;
+                    padding: 5px 15px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: lighten($buttonColor, 10%);
+                    }
+
+                    &.nextBtn {
+                        margin-left: auto;
+                    }
+
+                    &.sendBtn {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .personalInformationContainer {
+        .nameContainer {
+                label {
+                    display: inline-block;
+                    min-width: 60px;
+                }
+
+                @include md {
+                    input[type="text"] {
+                        width: 100px !important;
+                    }
+                }
+            }
+    }
+
+    .jobInformationContainer {
+        label {
+            display: inline-block;
+            min-width: 150px;
+        }
+    }
+
+    .emergencyContactInformationContainer {
+        label {
+            display: inline-block;
+            min-width: 130px;
+        }
+
+        @include md {
+            label:first-child {
+                min-width: 90px;
+            }
+
+            input[type="text"] {
+                width: 100px !important;
+            }
+        }
+
+        .consentContainer {
+            display: flex;
+            align-items: center;
+
+            input[type="checkbox"] {
+                margin-right: 15px;
+            }
+        }
+
+        .policyAgreeValidation {
+                display: none;
+                color: #831212;
+                font-weight: bold;
+                
+                &.show {
+                    display: inline-block;
+                }
+            }
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <div class="fullContainer">
+        <div class="formFullContainer">
+            <div class="formHeader">
+                <div class="formHeaderContainer">
+                    <button class="personalInformationHeaderBtn selected">Personal Information</button>
+                    <button class="jobInformationHeaderBtn">Job Information</button>
+                    <button class="emergencyContactInformationHeaderBtn">Emergency Contact Information</button>
+                </div>
+            </div>
+            <div class="formContentContainer">
+                <aside class="formSideContainer">
+                    <p class="selected">Personal Information</p>
+                    <p>Job Information</p>
+                    <p>Emergency Contact Information</p>
+                </aside>
+                <div class="formContainer">
+                    <div class="personalInformationContainer formSite show">
+                        <form>
+                            <div class="nameContainer formItem">
+                                <label for="infoFirstName">Name</label>
+                                <input type="text" name="infoFirstName" placeholder="First name" />
+                                <input type="text" name="infoLastName" placeholder="Last name" />
+                            </div>
+                            <div class="formItem">
+                                <label for="gender">Gender</label>
+                                <div class="genderContainer">
+                                    <div>
+                                        <input id="male" type="radio" name="gender" value="male" />
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div>
+                                        <input id="female" type="radio" name="gender" value="female" />
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div>
+                                        <input id="other" type="radio" name="gender" value="other" />
+                                        <label for="other">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formItem dateContainer">
+                                <label for="birthdate">Date of Birth (DD/MM/YYYY)</label>
+                                <input type="date" name="birthdate" />
+                            </div>
+                            <div class="btnContainer">
+                                <button class="btn slide1-next nextBtn">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="jobInformationContainer formSite hide">
+                        <form>
+                            <div class="jobTitleContainer formItem">
+                                <label for="title">Title</label>
+                                <input type="text" name="title" />
+                            </div>
+                            <div class="employmentType formItem">
+                                <label>Employment Type</label>
+                                <select name="employmentType">
+                                    <option value="fulltime">Full-time</option>
+                                    <option value="parttime">Part-time</option>
+                                    <option value="temporary">Temporary</option>
+                                    <option value="seasonal">Seasonal</option>
+                                </select>
+                            </div>
+                            <div class="formItem">
+                                <label for="salary">Base Salary</label>
+                                <input type="number" name="salary" />
+                            </div>
+                            <div class="btnContainer">
+                                <button class="btn slide2-prev prevBtn">Previous</button>
+                                <button class="btn slide2-next nextBtn">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="emergencyContactInformationContainer formSite hide">
+                        <form>
+                            <div class="nameContainer formItem">
+                                <label for="emergencyFirstname">Full name</label>
+                                <input type="text" name="emergencyFirstName" placeholder="First name" />
+                                <input type="text" name="emergencyLastName" placeholder="Last name" />
+                            </div>
+                            <div class="phone formItem">
+                                <label for="phone">Phone Number</label>
+                                <input type="number" name="phone" />
+                            </div>
+                            <div class="formItem consentContainer">
+                                <input type="checkbox" name="policyAgree" />
+                                <p>I consent to use of my personal information in accordance with the Privacy Policy.
+                                </p>
+                            </div>
+                            <p class="policyAgreeValidation">You have to accept the privacy policy!</p>
+                            <div class="btnContainer">
+                                <button class="btn slide3-previous prevBtn">Previous</button>
+                                <button class="btn sendBtn">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
